@@ -4,6 +4,8 @@ import { useEffect } from "react";
 
 const CalendlyBadge = () => {
 	useEffect(() => {
+		if (typeof window === "undefined") return;
+
 		const styleLink = document.createElement("link");
 		styleLink.rel = "stylesheet";
 		styleLink.href =
@@ -17,17 +19,23 @@ const CalendlyBadge = () => {
 		document.body.appendChild(script);
 
 		script.onload = () => {
-			Calendly.initBadgeWidget({
-				url: "https://calendly.com/zunaid-masud/30min?hide_event_type_details=1&hide_gdpr_banner=1",
-				text: "Schedule time with me",
-				color: "#0069ff",
-				textColor: "#ffffff",
-			});
+			if (window.Calendly) {
+				window.Calendly.initBadgeWidget({
+					url: "https://calendly.com/zunaid-masud/30min?hide_event_type_details=1&hide_gdpr_banner=1",
+					text: "Schedule time with me",
+					color: "#0069ff",
+					textColor: "#ffffff",
+				});
+			}
 		};
 
 		return () => {
-			document.head.removeChild(styleLink);
-			document.body.removeChild(script);
+			if (document.head.contains(styleLink)) {
+				document.head.removeChild(styleLink);
+			}
+			if (document.body.contains(script)) {
+				document.body.removeChild(script);
+			}
 		};
 	}, []);
 
