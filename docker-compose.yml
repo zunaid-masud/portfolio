@@ -1,0 +1,41 @@
+services:
+  # dev:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   container_name: demo-nextjs-dev
+  #   environment:
+  #     - WATCHPACK_POLLING=true
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
+  #     - /app/.next
+  #   ports:
+  #     - "3000:3000"
+  #   env_file:
+  #     - .env
+
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: portfolio-zunaid
+    ports:
+      - "3005:3000"
+    env_file:
+      - .env
+    networks:
+      - app-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "raspberry.pi5:192.168.0.191"
+
+
+networks:
+  app-network:
+    driver: bridge
+    external: true
+
+
+volumes:
+  node_modules:

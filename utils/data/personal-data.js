@@ -1,0 +1,21 @@
+export const personalData = {
+	name: "Md. Zunaid Masud",
+	profile: "/profile.png",
+	designation: "SEO & Digital Marketing Specialist",
+	designation2: "",
+	description:
+		"I am a results-driven Digital Marketing Specialist with a strong ambition to build a successful international career in digital marketing and online business. I have hands-on experience in SEO, social media marketing, and Shopify-based e-commerce solutions, helping businesses improve their online visibility, increase engagement, and boost conversions. I have worked with global clients through platforms like Fiverr and Instagram, where I developed strong skills in content marketing, branding, and performance-driven marketing strategies. I am passionate about continuous learning, staying updated with modern digital trends, and delivering high-quality results in a professional environment.",
+	email: "masudzunaid5@gmail.com",
+	phone: "+8801771161787",
+	address: "Rani Bari, Ward-09, Shibgonj, Chapai Nawabgonj, Rajshahi - 6320, Bangladesh",
+	github: "https://github.com/zunaid-masud",
+	facebook: "https://www.facebook.com/Zunaid2004",
+	fiverr:"https://www.fiverr.com/s/WERVz8d",
+	instagram:"https://www.instagram.com/zunaid_masudig/",
+	linkedIn: "",
+	twitter: "",
+	stackOverflow: "",
+	leetcode: "",
+	devUsername: "zunaid-masud",
+	resume: "https://drive.google.com/file/d/1A2TgdjmfXcpSis2Z7aKeZ5ebNb4voIAu/view",
+};
