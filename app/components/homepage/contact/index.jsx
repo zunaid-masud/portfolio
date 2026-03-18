@@ -6,17 +6,11 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaFacebook, } from 'react-icons/fa';
 import { Bfiverr, BsInstagram  } from "react-icons/bs";
 import { SiFiverr } from "react-icons/si";
+import AnimationLottie from "../../helper/animation-lottie";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import ContactForm from './contact-form';
 import lottieFile from "../../../assets/lottie/contact.json";
-
-import dynamic from "next/dynamic";
-
-const AnimationLottie = dynamic(
-  () => import("../../helper/animation-lottie"),
-  { ssr: false }
-);
 
 function ContactSection() {
   return (
