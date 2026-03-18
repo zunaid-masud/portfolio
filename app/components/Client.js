@@ -7,6 +7,7 @@ const HeroSection = dynamic(() => import("./homepage/hero-section"), { ssr: fals
 const AboutSection = dynamic(() => import("./homepage/about"), { ssr: false });
 const Education = dynamic(() => import("./homepage/education"), { ssr: false });
 const Projects = dynamic(() => import("./homepage/projects"), { ssr: false });
+const Contact = dynamic(() => import("./homepage/contact"), { ssr: false });
 
 function HomeClient() {
   return (
@@ -15,6 +16,7 @@ function HomeClient() {
       <AboutSection />
       <Education />
       <Projects />
+	  <Contact/>
     </div>
   );
 }
