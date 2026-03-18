@@ -14,7 +14,7 @@ export const projectsData = [
 		name: "Luxury Fashion Store (Wispa Style)",
 		description:
 			"Designed and developed a modern luxury fashion e-commerce website with clean UI and premium branding. Built dynamic navigation menus, product collections, hero sections, and optimized landing pages. Implemented search, user account, and cart system with smooth UI interactions. Focused on high-end UI/UX to match luxury product presentation standards.",
-		tools: ["NextJS", "Tailwind CSS", "Redux", "Firebase"],
+		tools: [],
 		role: "Frontend & Backend Developer",
 		code: "",
 		demo: "",

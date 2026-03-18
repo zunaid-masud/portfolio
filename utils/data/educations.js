@@ -1,8 +1,8 @@
 export const educations = [
 	{
 		id: 1,
-		title: "Bachelor of Arts (B.A) — 3rd Year Student",
-		duration: "2023 - 2024",
+		title: "Bachelor of Arts (B.A)",
+		duration: "2023 - Present",
 		institution: "National University (Rajshahi Govt. City College)",
 	},
 	{
